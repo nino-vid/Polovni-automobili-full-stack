@@ -1,0 +1,27 @@
+.dropdown {
+    border: 1px solid #ccc;
+    width: 200px;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin-top: 5px;
+
+  }
+  
+  .option {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    cursor: pointer;
+    width: fit-content;
+   overflow-y: auto;
+  }
+  
+  select option:hover {
+    background-color: #f31414 !important 
+}
+  

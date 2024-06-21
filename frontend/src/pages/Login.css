@@ -1,0 +1,125 @@
+.login-container{
+    background-color: rgb(247, 247, 247);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+}
+
+.login-form-container {
+    background-color: white;
+    margin-top: 1.5rem;
+    min-height: 450px;
+    min-width: 300px;
+    box-shadow: 0 0 8px 0 #d8d7d7;
+    position: relative; 
+    z-index: 10;
+    display: flex;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.car-smile-logo img {
+    height: auto;
+    min-width: 70px;
+    padding-bottom: 2rem;
+}
+
+.login-form-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.login-container input {
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+
+.login-container input:focus {
+    border: 1px solid orange;
+    background-color: rgb(245, 186, 119, 0.1);
+    outline: none;
+}
+
+
+.login-register-button button {
+    border: 2px solid #c4122f;
+    background-color: #c4122f;
+    color: white;
+    height: 2.5rem;
+    border-radius: 5px;
+    line-height: 5px;
+    margin-left: auto;
+    width: 100%; 
+    position: relative;
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
+
+.login-google-button  button{
+    border: 1px solid #3b5998;
+        background-color: transparent;
+        color: #3b5998;
+        height: 2.5rem;
+        border-radius: 5px;
+        line-height: 15px;
+        margin-left: auto;
+        width: 100%;
+        position: relative;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .login-next-button {
+        background-color: #00a8e6;
+        color: #fff;
+        border-radius: 5px;
+        height: 2.5rem;
+        margin-top: 1.5rem;
+    }
+      
+    .login-next-button:hover {
+        background-color: #53c4ee !important;
+    }
+
+     .login-ili {
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+        margin: 1rem 0;
+    }
+
+    .login-ili::before,
+    .login-ili::after {
+    content: ""; 
+    flex: 1;
+    height: 0.2px;
+    background-color: #cccaca;
+    margin: 0 1rem; 
+    position: relative;
+    z-index: 1; 
+}
+
+
+.login-container .error-message {
+    color: red;
+    margin-top: 10px;
+  }

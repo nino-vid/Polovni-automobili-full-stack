@@ -1,0 +1,535 @@
+.search-main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.search-page-parent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex: 14;
+}
+
+.search-page-container {
+    width: 1220px;
+    padding: 0 20px;
+  }
+
+  .search-page-container .two-cars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-height: 70%;
+}
+
+.search-page-container .car-link {
+    border-radius: 10px;
+    width: 47%;
+    height: 300px;
+    box-shadow: 0 1px 3px 0 #999;
+    overflow: hidden;
+    }
+
+.search-page-container .car-link img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    object-fit:contain; 
+}
+
+/**/
+
+.car-item-row {
+    display: flex;
+    flex:1;
+    flex-direction: row;
+    justify-content: space-between; 
+    padding: 0 5px;
+    border-radius: 5px;
+    height: 30%;
+}
+
+  .car-item-row:nth-child(1) p  {
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.car-item-row:nth-child(2) p  {
+   font-size: 14px;
+   font-weight: 400;
+}
+
+.car-link .car-details-container {
+    display: flex;
+    flex-direction: column;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 0 5px;
+}
+
+.search-page-container .car-search-info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 0;
+    justify-content:center;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.car-search-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px 0 #999;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 250px;
+    width: 100%;
+}
+
+.car-search-item .search-info-details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 1rem;
+    overflow: hidden;
+    padding-right: 1rem;
+    height: 100%;
+}
+
+.car-search-item img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.car-search-item .new {
+    background: linear-gradient(to top, rgb(161, 221, 255), lightblue);
+}
+
+.car-search-item .used {
+    background: linear-gradient(to top, rgb(255, 202, 211), rgb(255, 199, 208));
+}
+
+.car-search-item .second-row {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    padding-bottom: 2rem;
+    }
+
+.car-search-item .second-row p {
+    font-size: 20px;
+    padding-left: 1rem;
+    font-weight: 600;
+}
+
+.second-row .price {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.car-search-item .third-row {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1rem;
+}
+
+.third-row .column {
+    margin-right: 1rem;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 35%;
+}
+
+.third-row .column p {
+    margin-top: 1rem;
+}
+
+.car-search-item p {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+}
+
+.details-city p {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem
+}
+
+
+.displayed-cars-info p {
+    margin-bottom: 0;
+    margin-top: 2rem;
+    font-size: 12px;
+    color: #444
+}
+
+
+
+/*      PAGINATION       */
+
+.pagination {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin: 1rem 0;
+}
+
+.pagination button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .pagination button.active {
+    background-color: lightgray;
+    color: black;
+  }
+  
+  .pagination button:hover {
+    background-color: lightgray;
+  }
+
+
+  /*     SORT      */
+
+   .sort-and-pag {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sort-dropdown-container select:focus,
+  .sort-dropdown-container select:hover {
+     border: 1px solid orange;
+     background-color: rgb(245, 186, 119, 0.1);
+     outline: none;
+ }   
+
+ .sort-dropdown-container {
+    position: relative;
+    width: 30%;    
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.sort-dropdown-container .arrow {
+    margin-left: 8px;
+}
+
+.sort-dropdown-container .dropdown-options {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    max-height: 200px;
+    overflow-y:auto;
+    font-size: 13px;
+    font-weight: 400;
+    align-items: center;
+}
+
+.sort-dropdown-container .dropdown-option {
+    display: flex;
+    align-items: center;
+    padding: 10px 6px;
+    align-self: center;
+    width: 100%;
+    text-align: left;
+    border: none;
+    background: none;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+.sort-dropdown-container .dropdown-option:hover {
+    background-color: #f5f5f5;
+}
+
+.dropdown-option:active {
+    background-color: #e0e0e0;
+}
+
+.sort-dropdown-container .arrow {
+    font-size: 12px;
+    position: relative;
+    bottom: 0px;
+    font-weight: bold;
+}
+  
+
+ /*      LEGEND       */
+
+ 
+ .legend {
+    display: flex;   
+    flex-direction: row;       
+    align-items: center;    
+    justify-content: flex-start; 
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+
+
+}
+
+.legend span {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-left:3px;
+}
+
+.legend .left-container {
+    display: flex;
+    flex-direction: row;
+    margin-right: 4rem;
+    background-color: white;
+    width: 30%;
+    padding-left: 0;
+}
+
+.legend .left-container div:nth-child(1) {
+    background-color: #f6e3e3;
+}
+
+.legend .right-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.legend .right-container div:nth-child(1) {
+    background-color: #daf0fe;
+}
+
+.legend .right-container div:nth-child(2) {
+    background-color: #ecf8ff;
+}
+
+.square {
+    width: 20px;            
+    height: 20px;           
+    border: 1px solid #ccc;
+    margin: 2px;             
+}
+
+
+/*      SCROLL TO TOP BUTTON        */
+
+.scroll-to-top-button {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    width: auto;
+    height: auto;
+    border: 1px solid #ccc;
+    position: fixed;
+    right: 3%;
+    top: 50%
+}
+
+
+
+
+
+
+/*              RESPONSIVE              */
+
+
+@media (max-width: 860px) {
+
+    .search-page-container .two-cars {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+
+    .search-page-container .car-link {
+        border-radius: 10px;
+        width: 100%;
+        height: 300px;
+        box-shadow: 0 1px 3px 0 #999;
+        overflow: hidden;
+        margin-bottom: 1rem;
+        }
+
+        
+        }
+        
+    
+        
+@media (max-width: 860px) {
+    
+    .search-page-parent {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex: 14;
+    }
+            
+    .car-search-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        box-shadow: 0 1px 3px 0 #999;
+        overflow: hidden;
+        border-radius: 10px;
+        height: 450px;
+        width: 100%;
+       }    
+
+    
+       .car-search-item img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+    }
+
+    .car-search-item .search-info-details {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding-left: 1rem;
+        overflow: hidden;
+        padding-right: 1rem;
+        height: auto;
+        width: auto;
+    }
+
+    .car-search-item .second-row {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .car-search-item .second-row p{
+      
+        margin-bottom: 0;
+    }
+
+    .car-search-item .third-row {
+        margin-top: 1rem;
+        padding: 0;
+    }
+
+    .car-search-item .second-row p {
+        font-size: 18px;
+        padding-left: 0;
+        font-weight: 600;
+    }
+
+    .search-info-details .details-city {
+        position: relative;
+        right: -20px;
+        top: -62px;
+    }
+
+    .sort-and-pag {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+      }
+    
+      .sort-dropdown-container {
+        width: 50%; 
+      }
+
+    .legend {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 90%;
+    }  
+
+
+      .legend .left-container {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        background-color: white;
+    }
+}
+
+
+@media (max-width: 580px) {
+    .search-page-container {
+        width: 90%;   
+    } 
+
+    .search-info-details .details-city {
+        position: relative;
+        right: -20px;
+        top: -130px;
+    }
+    
+    .search-info-details .second-row .price {
+     
+        width: 45%;
+        display: flex;
+        justify-content: flex-end
+    } 
+
+    .sort-dropdown-container {
+        width: 60%; 
+      }
+
+      .legend {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        overflow: inherit;
+    }  
+
+
+    .legend .left-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        background-color: white;
+        margin-right: 0;
+    }
+
+}

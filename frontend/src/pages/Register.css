@@ -1,0 +1,341 @@
+.register-container {
+    background-color: rgb(247, 247, 247);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+}
+
+.register-form-container {
+    background-color: white;
+    margin-top: 1.5rem;
+    height: 637px;
+    width: 650px;
+    box-shadow: 0 0 8px 0 #d8d7d7;
+    position: relative; 
+    z-index: 10;
+    display: flex;
+}
+
+.register-left-container {
+    width: 50%;
+    height: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.register-left-container p {
+    background-color: white;
+    width: 50%;
+    padding-bottom:6px;
+    margin: 0;
+    font-size: 12px;
+}
+
+
+.register-right-container {
+    background-color: white;
+    width: 50%;
+    font-size: 13px;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+.register-right-container p {
+    text-align: center;
+    padding: 2rem 0;
+    margin: 0;
+    
+}
+
+.register-right-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.register-right-container li {
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    border-bottom: 1px dashed #cccccc;
+    border-width: 0.09vw;
+}
+
+.register-right-container span {
+  color: orange;
+  font-weight: 900;
+  font-size: 14px;
+  padding-right: 5px;
+}
+
+.register-left-container input {
+    display: flex;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+    width: 80%;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    font-family: inherit !important;
+}
+
+input:focus {
+    border: 1px solid orange;
+    background-color: rgb(245, 186, 119, 0.1);
+    outline: none;
+}
+
+.eye-icon {
+    position: relative;
+    left: 75%;
+    top: -12.6%;
+    /* top: -12%; */
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.privacy-policy {
+    font-size: 12px;
+    width: 100%;
+}
+
+
+.privacy-policy label {
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.privacy-policy label:hover {
+background-color: transparent;
+}
+
+.privacy-policy input[type="checkbox"] {
+    margin-right: 5px;
+    width: auto;
+}
+
+.privacy-policy a {
+    color: orange;
+    text-decoration: none;
+}
+
+.privacy-policy span {
+    display: inline;
+    width: 80%;
+}
+
+
+.register-button {
+    width: 100%;
+}
+
+.register-button button {
+    border: 2px solid #c4122f;
+    background-color: #c4122f;
+    color: white;
+    height: 3rem;
+    border-radius: 5px;
+    line-height: 15px;
+    margin-top: 15%;
+    margin-left: auto;
+    width: 255px; 
+    position: relative;
+
+}
+
+.register-info p {
+    display: flex;
+    margin-top: 1rem;
+    color: orange
+}
+
+    p.register-ili {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        overflow: visible;
+        z-index: 1;
+        padding: 0 60px;
+        margin-top: 1rem;
+        width: 45%;
+      }
+      
+      p.register-ili::before,
+      p.register-ili::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 35%;
+        height: 0.08px; 
+        background-color: rgb(219, 217, 217);
+        padding-left: 20px;
+        margin: 0 20px;
+      }
+      
+      p.register-ili::before {
+        left: -5%; 
+        transform: translateY(-50%);
+      }
+      
+      p.register-ili::after {
+        right: -5%; 
+        transform: translateY(-50%);
+      }
+
+      .register-google-button  button{
+        border: 1px solid #3b5998;
+        background-color: transparent;
+        color: #3b5998;
+        height: 3rem;
+        border-radius: 5px;
+        line-height: 15px;
+        margin-top: 15%;
+        margin-left: auto;
+        width: 255px;
+        position: relative;
+      }
+
+      .register-login-link {
+          margin-top: 1rem;
+      }
+
+      .register-login-link p {
+        display: inline;
+      }
+
+      .register-login-link a {
+        text-decoration: none;
+        color: orange;
+    }
+
+
+
+
+
+
+
+
+
+    
+      .spinner-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      
+      .spinner {
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        border-left-color: #09f;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+         
+      .register-button button:disabled {
+        cursor: not-allowed;
+      }
+
+      .register-container .error-message {
+        width: 100%;
+        font-size: 16px;
+        color: red;
+        margin-top: 10px;
+      }
+
+
+
+
+
+      /*              RESPONSIVE              */
+
+      @media (max-width: 700px) {
+        
+        .register-form-container {
+          max-width: 100%;
+          width: 330px;
+        }
+
+        .register-left-container {
+          background-color: white;
+          width: 100%;
+          padding: 2rem 1rem;
+          display: flex;
+          flex-direction: column;
+          align-self: center;
+
+        }
+
+        .register-left-container input {
+          display: flex;
+          padding: 0.4rem;
+          margin-bottom: 1rem;
+          width: 95%;
+          border: 1px solid rgba(0, 0, 0, 0.6);
+          border-radius: 5px;
+          font-family: inherit !important;
+      }
+
+      .register-left-container .password-input {
+        margin-bottom: 1rem !important;
+      }
+
+
+        .register-right-container {
+          display: none;
+        }
+
+
+        .register-button button {
+          width: 100%;
+        }
+
+        .error-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          align-self: center;
+          position: relative;
+          min-height: 60px;
+        }
+
+        .eye-icon {
+          position: absolute;
+          left: 85%;
+          top: 28.5% !important;
+          transform: translateY(-50%);
+          cursor: pointer;
+      }
+
+      .register-info p {
+        width: 100%;
+      }
+      }
+
+      @media (max-width: 320px) {
+        .privacy-policy label {
+          display: none;
+        }
+
+        .eye-icon {
+          position: absolute;
+          left: 85%;
+          top: 32.3% !important;
+          transform: translateY(-50%);
+          cursor: pointer;
+      }
+      }

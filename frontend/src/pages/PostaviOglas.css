@@ -1,0 +1,335 @@
+.main-container-oglas {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 100%;
+}
+
+.main-container-oglas p {
+  color: #f1a41a;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.main-container-oglas .image-container {
+  padding:  10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container-oglas .image-container .top {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.main-container-oglas .image-container .drag-area {
+  width: 600px;
+  height: 150px;
+  border-radius: 5px;
+  border: 2px dashed #0086fe;
+  color: #0086fe;
+  background: #f4f3f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  -webkit-user-select: none;
+  margin-top: 10px;
+}
+
+.main-container-oglas .image-container .drag-area .visible{
+  font-size: 10px;
+}
+
+.main-container-oglas .image-container .select {
+  color: #5256ad;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.main-container-oglas .image-container .select:hover {
+  opacity: 0.6;
+}
+
+.main-container-oglas .image-container .container {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.main-container-oglas .image-container .container .image {
+  width: 75px;
+  flex: 1 1 calc(20% - 10px); 
+  max-width: calc(20% - 10px);
+  margin-right: 5px;
+  
+  height: 75px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.main-container-oglas .image-container .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+.main-container-oglas .image-container .container .image span{
+  position: absolute;
+  top: -2px;
+  right: 9px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.main-container-oglas .image-container input,
+.main-container-oglas .image-container .drag-area .on-drop,
+.main-container-oglas .image-container .drag-area .dragover .visible {
+  display: none;
+}
+
+
+.delete{
+  z-index: 999;
+  color: #0086fe;
+  /* color: blue; */
+}
+
+
+/*         CAR INFO (brand and models)          */
+
+.main-container-oglas .car-info-container {
+  padding:  10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container-oglas .segment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+
+.main-container-oglas .brand-and-model {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-container-oglas .brand-and-model .checkbox{
+  min-width: 200px;
+  padding: 0.4rem;
+  border-radius: 5px;
+  margin: 10px;
+} 
+
+.main-container-oglas .car-info-container .checkbox select {
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+
+
+/*         CAR INFO (basic info)          */
+
+.main-container-oglas .car-info-container .info-container {
+padding:  10px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+.main-container-oglas .car-info-container .info-container .checkbox {
+width: 220px;
+padding: 0.4rem;
+border-radius: 5px;
+margin: 10px;
+
+
+}
+
+
+.main-container-oglas .car-info-container .info-container .input {
+display: flex;
+padding: 0.4rem;
+padding-right: 0;
+width: 96.5%;
+border: 1px solid rgba(0, 0, 0, 0.6);
+border-radius: 5px;
+font-family: inherit !important;
+vertical-align: center;
+color: black;
+
+background: white;
+background-color: #fff;
+}
+
+.main-container-oglas .car-info-container .info-container .input::placeholder {
+color: black;
+}
+
+
+/*         CAR INFO (extra info)          */
+
+.main-container-oglas .checkbox .price {
+position: relative;
+right: -90%;
+top: -52%;
+color: grey;
+}
+
+
+/*         Button         */
+
+.main-container-oglas .button-oglas  {
+
+margin-top: 4rem;
+}
+
+.main-container-oglas .button-oglas .postavi-oglas {
+width: 300px;
+padding: 0.6rem;
+border-radius: 5px;
+border: 1px solid rgba(0, 0, 0, 0.4);
+box-shadow: 1px 1px 1px #c1c1c1;
+background-color: #8ec73b;
+color: #ffffff;
+cursor: pointer;
+height: 3rem;
+}
+.main-container-oglas .button-oglas .postavi-oglas:hover {
+background-color: #6e9b2c;
+transition: background-color .15s ease;
+}
+
+
+
+
+.car-info-container .error-message {
+  color: red;
+  margin-top: 2rem;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+
+/*           SPINNER           */
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #09f;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+   
+.register-button button:disabled {
+  cursor: not-allowed;
+}
+
+
+
+/*          RESPONSIVE          */
+
+
+@media (max-width: 800px) {
+
+  .main-container-oglas {
+    /* max-width: 1220px; */
+    height: auto;
+    overflow: hidden;
+  }
+
+  .main-container-oglas .image-container .drag-area {
+    width:auto;
+  }
+
+  .main-container-oglas .car-info-container {
+    margin-bottom: 5rem;
+  }
+
+  .segment-container .brand-and-model {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-container-oglas .brand-and-model .checkbox {
+    min-width: 220px;
+    margin: 0px;
+}
+  .main-container-oglas .car-info-container .info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .main-container-oglas .car-info-container .info-container .checkbox {
+    width: 220px;
+    margin: 0;
+}
+
+.main-container-oglas .checkbox .price {
+  top: -28px;
+  }
+
+
+  .main-container-oglas .image-container .container .image {
+    width: 35px;
+    flex: 1 1 calc(20% - 10px); 
+    max-width: calc(40% - 10px);
+    margin-right: 5px;
+    
+    height: 35px;
+    position: relative;
+    margin-bottom: 8px;
+  }
+
+  .main-container-oglas .image-container .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}

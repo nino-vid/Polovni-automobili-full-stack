@@ -1,0 +1,68 @@
+.price {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    border: none;
+    outline: hidden;
+}
+
+.price input {
+    display: flex;
+    padding: 0.4rem;
+    padding-right: 0;
+    width: 96%;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    font-family: inherit !important;
+    vertical-align: center;
+}
+
+.price input:focus {
+    background-color: white;
+    border-color: black;
+  }
+
+.price span{
+    position: absolute;
+    right: 12%;
+    top: 12%;
+    color: grey;
+}
+
+.arrow-button {
+    background: rgb(202, 202, 202);
+    border: none;
+    cursor: pointer;
+    font-size: 8px;
+    display: block;
+    padding: 0px;
+    position: relative;
+    top: 0;
+}
+
+.arrow-button:focus {
+    outline: none;
+}
+
+.price button {
+    position: relative;
+    bottom: 1rem;
+    left: 150%;
+}  
+
+
+/*          RESPONSIVE            */
+
+@media (max-width:750px) {
+    .price {
+        width: 102.3%;
+        margin-bottom: 5px;
+    }
+
+    .price span{
+        position: absolute;
+        right: 6%;
+        top: 12%;
+        color: grey;
+    }
+}

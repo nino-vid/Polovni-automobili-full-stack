@@ -1,0 +1,24 @@
+.registrationSuccess-container {
+    background-color: rgb(247, 247, 247);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registrationSuccess-container .container {
+    text-align: center;
+    max-width: 80%; 
+  }
+  
+  .registrationSuccess-container img {
+    max-width: 100%; 
+    margin-bottom: 10px;
+  }
+  
+  .registrationSuccess-container .text1 {
+    margin-top: 30px;
+    background-color: rgb(254, 255, 167);
+    font-weight: bold;
+    color: chocolate;
+}
