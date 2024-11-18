@@ -2,7 +2,7 @@
 
  
 ### login credentials
-```
-**username:** test@test.com
-**password:** test123
-```
+
+**username:** ```test@test.com```
+**password:** ```test123```
+
